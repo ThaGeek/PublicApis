@@ -1,8 +1,9 @@
 const express = require("express");
-
+const memes = require("./memes");
 const cors = require("cors");
 const { get } = require("lodash");
 const origins = get(process, "env.allowedOrigins", "").split(",");
+
 
 
 // create the server
@@ -24,6 +25,8 @@ app.get("/", (req, res) => {
       .status(200)
       .send({ status: "OK", message: "Hello world" });
 });
+
+app.use("/memes", memes);
 
 
 
