@@ -7,3 +7,8 @@
 ## Dogs
 
 - /dogs/random
+
+
+## Cats
+
+- /cats/random
