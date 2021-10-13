@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const { get } = require('lodash');
 const memes = require('./memes');
+const dogs = require('./dogs');
 
 const origins = get(process, 'env.allowedOrigins', '').split(',');
 
@@ -23,6 +24,7 @@ app.get('/', (req, res) =>
 );
 
 app.use('/memes', memes);
+app.use('/dogs', dogs);
 
 const port = process.env.PORT || 3001;
 app.listen(port, () => {
