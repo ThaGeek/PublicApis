@@ -4,6 +4,7 @@ const { get } = require('lodash');
 const memes = require('./memes');
 const dogs = require('./dogs');
 const cats = require('./cats');
+const ducks = require('./ducks');
 
 const origins = get(process, 'env.allowedOrigins', '').split(',');
 
@@ -27,6 +28,7 @@ app.get('/', (req, res) =>
 app.use('/memes', memes);
 app.use('/dogs', dogs);
 app.use('/cats', cats);
+app.use('/ducks', ducks);
 
 const port = process.env.PORT || 3001;
 app.listen(port, () => {
