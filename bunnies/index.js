@@ -16,7 +16,7 @@ async function (req, res) {
 
       console.log(error);
       return res.status(500).send({
-          message: "An error has occured while generating your dog image !"
+          message: "An error has occurred while generating your bunnies image !"
       })
   }
 
