@@ -8,6 +8,7 @@ const ducks = require('./ducks');
 const bunnies = require('./bunnies');
 const lizards = require('./lizards');
 const koalas = require('./koalas');
+const foxes = require('./foxes');
 
 const origins = get(process, 'env.allowedOrigins', '').split(',');
 
@@ -35,6 +36,7 @@ app.use('/ducks', ducks);
 app.use('/bunnies', bunnies);
 app.use('/lizards', lizards);
 app.use('/koalas', koalas);
+app.use('/foxes', foxes);
 
 const port = process.env.PORT || 3001;
 app.listen(port, () => {
