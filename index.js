@@ -5,6 +5,7 @@ const memes = require('./memes');
 const dogs = require('./dogs');
 const cats = require('./cats');
 const ducks = require('./ducks');
+const bunnies = require('./bunnies');
 
 const origins = get(process, 'env.allowedOrigins', '').split(',');
 
@@ -29,6 +30,7 @@ app.use('/memes', memes);
 app.use('/dogs', dogs);
 app.use('/cats', cats);
 app.use('/ducks', ducks);
+app.use('/bunnies', bunnies);
 
 const port = process.env.PORT || 3001;
 app.listen(port, () => {

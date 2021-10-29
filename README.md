@@ -12,3 +12,8 @@
 ## Cats
 
 - /cats/random
+
+
+## Bunnies
+
+- /bunnies/random
